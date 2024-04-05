@@ -1,0 +1,97 @@
+---
+name: Luca Capella Klein
+qualifications: Econ, BSc
+address: São Paulo - SP, Brazil  | 27 years old
+phone: +55 11 98403-4661
+email: lucacklein@gmailcom
+github: lcklein
+linkedin: luca-klein-b118b2128
+headcolor: "414141"
+output: 
+  vitae::awesomecv:
+    keep_tex: true
+---
+
+```{r setup, include = FALSE}
+
+# libPaths("C:/Users/LucaKlein/4intelligence/Regional - Documentos/Regional/trabalho/pib_regional/renv/library/R-40/x86_64-w64-mingw32/")
+# 
+# source("C:/Users/LucaKlein/Documents/modelagem-em-escala/auxiliary_functions/packagesR")
+library(vitae)
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Education
+
+```{r education}
+
+tribble(
+  ~ degree, ~ uni, ~loc, ~ dates,
+ "Cedeplar/ UFMG", "Belo Horizonte, Brazil", "Msc, Economics","Jan 2022 - Present",
+   "Pontifícia Universidade Católica de São Paulo", "São Paulo, Brazil", "Bsc, Economics","Jan2015 - Dec 2019"
+) %>% 
+  detailed_entries(degree, dates,loc, uni)
+
+```
+
+# Research Experience
+
+```{r research}
+
+tribble(~ role, ~ company,~ loc, ~ dates, ~ details,
+"Research Assistant","Jul 2023 - Present", "The Effects of Fiscal Stimulus– Evidence from a New Narrative Measure","Remote Job", "Analysis of policy documents from OECD, IMF, and domestic sources",
+"Research Assistant","Jul 2023 - Present", "The Effects of Fiscal Stimulus– Evidence from a New Narrative Measure","Remote Job", "Classify fiscal expansion episodes in industrialized and Latin American economies") %>% 
+  detailed_entries(role,company,loc ,dates,details)
+
+```
+
+# Employment History
+
+```{r consulting}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Regional Economics JR Analyst", "4intelligence", "São Paulo, Brazil", "Jan 2020 - Dec 2020", "Integration of spatial, macroeconomics and other data at regional scale (region, state and others)",
+  "Regional Economics JR Analyst", "4intelligence", "São Paulo, Brazil", "Jan 2020 - Dec 2020", "Development of approaches to estimate impacts of economic policies at regional scale",
+  "Regional Economics JR Analyst", "4intelligence", "São Paulo, Brazil", "Jan 2020 - Dec 2020", "Connection of the regional perspective to the main Brazilian macroeconomics indicators",
+  "Regional Economics JR Analyst", "4intelligence", "São Paulo, Brazil", "Jan 2020 - Dec 2020", "Conduction of the analysis and forecasts of Regional GDP ",
+  "Regional Economics JR Analyst", "4intelligence", "São Paulo, Brazil", "Jan 2020 - Dec 2020", "Leading of the research and conduction of robust analysis on topics of regional economics",
+  "Macroeconomics Research Intern", "4E Consultoria", "São Paulo, Brazil", "Jul 2018 - Dec 2019", "Development of econometric models for time series forecast",
+  "Macroeconomics Research Intern", "4E Consultoria", "São Paulo, Brazil", "Jul 2018 - Dec 2019", "Assistance in the development of projects",
+  "Macroeconomics Research Intern", "4E Consultoria", "São Paulo, Brazil", "Jul 2018 - Dec 2019", "Monitoring of economics activity, inflation, fiscal and international indicators",
+  "Macroeconomics Research Intern", "4E Consultoria", "São Paulo, Brazil", "Jul 2018 - Dec 2019", "Maintenance of databases of selected macroeconomic indexes",
+  "Finance and Accounting Intern", "Colgate-Palmolive", "São Paulo, Brazil", "Jan 2017 - Jul 2018", "Reconciliations of equity and accounts",
+  "Finance and Accounting Intern", "Colgate-Palmolive", "São Paulo, Brazil", "Jan 2017 - Jul 2018", "Revenue calculation",
+  "Finance and Accounting Intern", "Colgate-Palmolive", "São Paulo, Brazil", "Jan 2017 - Jul 2018", "Support in the financial statements",
+  "Finance Intern", "Projeto Integrado Comunicação Estratégica", "São Paulo, Brazil", "Jul 2015 - Dec 2015", "Market scenario analysis at global scale",
+  "Finance Intern", "Projeto Integrado Comunicação Estratégica", "São Paulo, Brazil", "Jul 2015 - Dec 2015", "Analysis of opportunities for service exports",
+  "Finance Intern", "Projeto Integrado Comunicação Estratégica", "São Paulo, Brazil", "Jul 2015 - Dec 2015", "Liability accounting"
+  
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+# Softwares
+
+```{r softwares}
+tribble(
+  ~ soft, ~ status,
+  "R", "Advanced ",
+  "Python", "Basic ",
+  "Office 365","Advanced",
+  "LaTex", "Basic",
+)  %>% 
+  detailed_entries(soft, status)
+```
+
+# Languages
+
+```{r lang}
+tribble(
+  ~ lang, ~ status,
+  "Portuguese","Native",
+  "English", "Advanced "
+)  %>% 
+  detailed_entries(lang, status)
+```
